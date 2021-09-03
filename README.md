@@ -1,4 +1,4 @@
-# aboutblank-html-injection
+# about:blank HTML injection
 PoC for the about:blank html injection phishing technique
 
 This technique uses `window.open('about:blank', ...)` in combination with `document.write('<iframe ...>')` and `document.title = 'Something'` to create a new about:blank window which can be disguised as a login page with the correct title. This technique was discovered in the wild as a "Discord Nitro Gift" by making people log in with their steam account.
