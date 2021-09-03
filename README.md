@@ -17,5 +17,8 @@ Tested against the following browsers (All tested on Manjaro Linux x64 using lat
 | Samsung Internet Android 	| 15.0.2.47                                                        	| ❌          	|
 | Microsoft Edge           	| 93.0.961.38 (Official Build)                                     	| ✅          	|
 
+### Posible fixes
+Block JavaScript from modifying html when opening a window on about:blank (just like when JavaScript tries to change data cross-domain) or have the browser not display about:blank as url, but the original domain name (this last mitigation was seen on both Firefox and Samsung Internet Android)
+
 ### Conclusion
-It seems like this is an issue on Chromium-based browsers only. This technique can be used to have a greater chance of success on phishing attacks, as the domain name (about:blank) is not immediately deemed suspicious by everyone.
+It seems like this is an issue on Chromium-based browsers only. This technique can be used to have a greater chance of success on phishing attacks, as the "hostname" (about:blank) is not immediately deemed suspicious by everyone.
