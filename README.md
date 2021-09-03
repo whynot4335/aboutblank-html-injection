@@ -3,6 +3,11 @@ PoC for the about:blank html injection phishing technique
 
 This technique uses `window.open('about:blank', ...)` in combination with `document.write('<iframe ...>')` and `document.title = 'Something'` to create a new about:blank window which can be disguised as a login page with the correct title. This technique was discovered in the wild as a "Discord Nitro Gift" by making people log in with their steam account.
 
+## PoC Screenshot [Browser: Google Chrome Dev Channel]
+![Image of Proof of Concept](https://cdn.discordapp.com/attachments/797439482126139392/883336418947113040/unknown.png)
+
+## Versions
+
 Tested against the following browsers (All tested on Manjaro Linux x64 using latest AUR versions, except for the Android browsers)
 
 | Browser name             	| Browser version                                                  	| PoC worked 	|
